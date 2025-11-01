@@ -1,17 +1,20 @@
-let arrayOne = [2, 34, 5, 5];
+let arrayOne = [2, 34, 5];
 let arrayTwo = [2, 43, 5];
-
+let equal = true;
 
 
 if(arrayOne.length === arrayTwo.length){
   for(let i = 0; i < arrayOne.length; i++){
     if(arrayOne[i] !== arrayTwo[i]){
-      console.log(`Arrays are not equals`);
+      equal = false;
       break;
-    }else{
-      console.log(`Arrays are equals`);
     }
   }
+    if(equal){
+      console.log(`Arrays are equals`);
+    }else {
+      console.log(`Arrays are not equals`);
+    }
   console.log(`Arrays length is equal`);
 }else {
   console.log(`Arrays are not equals`);
